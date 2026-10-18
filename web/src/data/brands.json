@@ -1,0 +1,343 @@
+{
+  "_note": "Fictional brands: the starter catalog every new browser starts with. Edit or replace it on the Catalog page.",
+  "brands": [
+    {
+      "id": "brewno",
+      "name": "Brewno",
+      "category": "beverage/coffee",
+      "placement_types": [
+        "tabletop",
+        "held_item"
+      ],
+      "scene_affinity": [
+        "cafe",
+        "office",
+        "kitchen",
+        "morning"
+      ],
+      "exclusions": [
+        "grief",
+        "violence"
+      ],
+      "markets": {
+        "IN": {
+          "product": "Dhoop & Bean Masala Chai cup, warm brown and saffron sunrise emblem with a coffee bean",
+          "url": "https://example.com/brewno/in",
+          "brand": "Dhoop & Bean",
+          "packshot": "brewno-in.jpg",
+          "logo": "brewno-in-logo.jpg"
+        },
+        "JP": {
+          "product": "Mameiro Coffee Matcha Latte cup, navy ink-brush bean emblem, 'MAMEIRO COFFEE 豆色'",
+          "url": "https://example.com/brewno/jp",
+          "brand": "Mameiro Coffee",
+          "packshot": "brewno-jp.jpg",
+          "logo": "brewno-jp-logo.jpg"
+        },
+        "ID": {
+          "product": "Rimbara Kopi Susu cup, deep green forest leaf emblem around a coffee bean, 'RIMBARA KOPI'",
+          "url": "https://example.com/brewno/id",
+          "brand": "Rimbara Kopi",
+          "packshot": "brewno-id.jpg",
+          "logo": "brewno-id-logo.jpg"
+        }
+      }
+    },
+    {
+      "id": "fizzup",
+      "name": "FizzUp",
+      "category": "beverage/soft drink",
+      "placement_types": [
+        "tabletop",
+        "shelf",
+        "fridge",
+        "held_item"
+      ],
+      "scene_affinity": [
+        "party",
+        "street",
+        "sports",
+        "cafe"
+      ],
+      "exclusions": [
+        "grief",
+        "hospital"
+      ],
+      "markets": {
+        "IN": {
+          "product": "FizzUp Lemon-Lime Sparkling Soda can, silver can with green and yellow citrus slices, 'FIZUPP'",
+          "url": "https://example.com/fizzup/in",
+          "brand": "FizzUp",
+          "packshot": "fizzup-in.jpg"
+        },
+        "JP": {
+          "product": "Yuzu no Awa sparkling can, bright yellow with yuzu fruit, 'ゆずの泡 ゆずスパークリング'",
+          "url": "https://example.com/fizzup/jp",
+          "brand": "Yuzu no Awa",
+          "packshot": "fizzup-jp.jpg"
+        },
+        "ID": {
+          "product": "Seger Pop Soda Leci can, pink with lychees, 'SEGER POP SODA LECI'",
+          "url": "https://example.com/fizzup/id",
+          "brand": "Seger Pop",
+          "packshot": "fizzup-id.jpg"
+        }
+      }
+    },
+    {
+      "id": "munchbox",
+      "name": "Munchbox",
+      "category": "snack",
+      "placement_types": [
+        "tabletop",
+        "shelf"
+      ],
+      "scene_affinity": [
+        "cafe",
+        "home",
+        "office",
+        "travel"
+      ],
+      "exclusions": [
+        "grief"
+      ],
+      "markets": {
+        "IN": {
+          "product": "Munchbox Masala Makhana pack, red",
+          "url": "https://example.com/munchbox/in",
+          "packshot": "munchbox-in.jpg"
+        },
+        "JP": {
+          "product": "Munchbox Nori Rice Crackers pack, black",
+          "url": "https://example.com/munchbox/jp",
+          "packshot": "munchbox-jp.jpg"
+        },
+        "ID": {
+          "product": "Munchbox Keripik Singkong pack, yellow",
+          "url": "https://example.com/munchbox/id",
+          "packshot": "munchbox-id.jpg"
+        }
+      }
+    },
+    {
+      "id": "plateful",
+      "name": "Plateful",
+      "category": "service/food delivery",
+      "placement_types": [
+        "phone_screen",
+        "laptop_screen",
+        "delivery_box",
+        "poster"
+      ],
+      "scene_affinity": [
+        "home",
+        "office",
+        "night",
+        "party"
+      ],
+      "exclusions": [
+        "hospital",
+        "grief"
+      ],
+      "markets": {
+        "IN": {
+          "product": "Daawat House biryani ordering page on screen, gold 'DH' monogram",
+          "url": "https://example.com/plateful/in",
+          "brand": "Daawat House",
+          "packshot": "plateful-in.jpg",
+          "screen": "plateful-in-screen.jpg",
+          "logo": "plateful-in-logo.jpg"
+        }
+      }
+    },
+    {
+      "id": "wanderly",
+      "name": "Wanderly",
+      "category": "service/travel",
+      "placement_types": [
+        "poster",
+        "billboard",
+        "laptop_screen"
+      ],
+      "scene_affinity": [
+        "cafe",
+        "office",
+        "street",
+        "romantic"
+      ],
+      "exclusions": [
+        "violence"
+      ],
+      "markets": {
+        "IN": {
+          "product": "Wanderly travel poster 'Your Goa, your way.', beach and palms",
+          "url": "https://example.com/wanderly/in",
+          "packshot": "wanderly-in.jpg"
+        },
+        "JP": {
+          "product": "Tabi Biyori travel poster '沖縄、心ほどける旅へ。', Okinawa coast",
+          "url": "https://example.com/wanderly/jp",
+          "brand": "Tabi Biyori",
+          "packshot": "wanderly-jp.jpg"
+        },
+        "ID": {
+          "product": "Jalanyuk travel poster 'Bali, saatnya rehat sejenak.', temple and rice terraces",
+          "url": "https://example.com/wanderly/id",
+          "brand": "Jalanyuk",
+          "packshot": "wanderly-id.jpg"
+        }
+      }
+    },
+    {
+      "id": "paysa",
+      "name": "Paysa",
+      "category": "service/fintech wallet",
+      "placement_types": [
+        "counter_sign",
+        "phone_screen",
+        "poster"
+      ],
+      "scene_affinity": [
+        "street",
+        "cafe",
+        "shop"
+      ],
+      "exclusions": [
+        "gambling",
+        "violence"
+      ],
+      "markets": {
+        "IN": {
+          "product": "Paysa QR standee on counter, blue and white, 'Scan. Pay. Smile.' with 5% cashback",
+          "url": "https://example.com/paysa/in",
+          "packshot": "paysa-in.jpg"
+        }
+      }
+    },
+    {
+      "id": "tote",
+      "name": "Jholaa Club",
+      "category": "fashion/tote bag",
+      "placement_types": [
+        "held_item",
+        "wardrobe",
+        "shoulder_bag"
+      ],
+      "scene_affinity": [
+        "street",
+        "cafe",
+        "shop",
+        "travel",
+        "morning"
+      ],
+      "exclusions": [
+        "grief"
+      ],
+      "markets": {
+        "IN": {
+          "brand": "Jholaa Club",
+          "product": "Jholaa Club floral canvas tote, natural canvas with a sunburst flower print",
+          "url": "https://example.com/jholaa/in",
+          "packshot": "tote-in.jpg"
+        },
+        "JP": {
+          "brand": "Yohaku",
+          "product": "Yohaku botanical canvas tote, natural canvas with ink leaves, '余白 YOHAKU'",
+          "url": "https://example.com/yohaku/jp",
+          "packshot": "tote-jp.jpg"
+        },
+        "ID": {
+          "brand": "Kain Kita",
+          "product": "Kain Kita floral tote, light blue canvas with batik-style flowers, 'KAIN KITA'",
+          "url": "https://example.com/kainkita/id",
+          "packshot": "tote-id.jpg"
+        }
+      }
+    },
+    {
+      "id": "kora",
+      "name": "Kora",
+      "category": "fashion/apparel",
+      "placement_types": [
+        "wardrobe"
+      ],
+      "scene_affinity": [
+        "street",
+        "cafe",
+        "home",
+        "office",
+        "morning",
+        "night"
+      ],
+      "exclusions": [
+        "grief"
+      ],
+      "markets": {
+        "IN": {
+          "brand": "Kora",
+          "product": "Kora everyday crewneck sweatshirt, heather navy cotton with a small white 'KORA' chest print",
+          "url": "https://example.com/kora/in",
+          "packshot": "kora-in.jpg"
+        },
+        "JP": {
+          "brand": "Kora",
+          "product": "Kora everyday crewneck sweatshirt, oatmeal cotton with a small 'KORA' chest print",
+          "url": "https://example.com/kora/jp",
+          "packshot": "kora-jp.jpg"
+        },
+        "ID": {
+          "brand": "Kora",
+          "product": "Kora everyday crewneck sweatshirt, forest green cotton with a small 'KORA' chest print",
+          "url": "https://example.com/kora/id",
+          "packshot": "kora-id.jpg"
+        }
+      }
+    },
+    {
+      "id": "vela",
+      "name": "Vela",
+      "category": "fashion/jacket",
+      "placement_types": [
+        "wardrobe"
+      ],
+      "scene_affinity": [
+        "home",
+        "street",
+        "cafe",
+        "night",
+        "evening",
+        "city"
+      ],
+      "exclusions": [
+        "grief"
+      ],
+      "markets": {
+        "IN": {
+          "brand": "Vela",
+          "product": "Vela cropped leather jacket, soft black lambskin with a silver asymmetric zip",
+          "url": "https://example.com/vela/in",
+          "packshot": "vela.jpg"
+        },
+        "JP": {
+          "brand": "Vela",
+          "product": "Vela cropped leather jacket, soft black lambskin with a silver asymmetric zip",
+          "url": "https://example.com/vela/jp",
+          "packshot": "vela.jpg"
+        },
+        "ID": {
+          "brand": "Vela",
+          "product": "Vela cropped leather jacket, soft black lambskin with a silver asymmetric zip",
+          "url": "https://example.com/vela/id",
+          "packshot": "vela.jpg"
+        }
+      }
+    }
+  ],
+  "global_rules": [
+    "No alcohol, tobacco or gambling placements in any scene with minors.",
+    "No medical or health claims.",
+    "No competing brands of the same category in one scene.",
+    "No placements in scenes tagged grief, violence, accident or hospital unless the brand opts in.",
+    "Never edit faces, bodies or performances; product-only edits."
+  ]
+}

@@ -1,0 +1,14 @@
+/* Shell layout. --sb is the sidebar width (240 expanded, 64 collapsed). */
+.shell-sidebar {
+  width: var(--sb);
+  transition: width var(--dur-slow) var(--ease);
+}
+@media (min-width: 768px) {
+  .shell-main {
+    padding-left: calc(var(--sb) + 12px + 32px);
+    transition: padding-left var(--dur-slow) var(--ease);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .shell-main { padding-left: calc(var(--sb) + 12px + 20px); }
+}

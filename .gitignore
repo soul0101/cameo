@@ -1,0 +1,26 @@
+# Dependencies and builds
+node_modules/
+dist/
+*.tsbuildinfo
+.firebase/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.adk/
+
+# Local config and secrets
+.env*
+!.env.example
+
+# Episodes, caches and generated media (made by the API at runtime)
+agents/out/
+agents/samples/
+*.mp4
+
+# OS and editor
+.DS_Store
+*.log

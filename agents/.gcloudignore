@@ -1,0 +1,9 @@
+# `gcloud run deploy --source agents` uploads only what the Dockerfile needs.
+/*
+!/Dockerfile
+!/.dockerignore
+!/requirements.txt
+!/cameo_agents/
+!/samples/
+__pycache__/
+*.pyc

@@ -1,0 +1,137 @@
+/* Cameo design tokens.
+   Light on :root, dark on [data-theme="dark"] or the system preference when no attribute is set.
+   Floating surfaces on a softly vignetted background; one amber accent.
+   Alternate names (--panel, --hairline …) are aliased at the bottom. */
+
+:root {
+  color-scheme: light;
+  --bg: #f6f6f7;
+  --vignette: radial-gradient(120% 90% at 50% 0%, transparent 55%, rgba(0, 0, 0, 0.02) 100%);
+  --surface: #ffffff;
+  --surface-2: #f2f2f4;
+  --surface-3: #ebebee;
+  --surface-translucent: rgba(255, 255, 255, 0.85);
+  --border: rgba(0, 0, 0, 0.06);
+  --border-strong: rgba(0, 0, 0, 0.12);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lift: 0 12px 32px rgba(0, 0, 0, 0.1);
+  --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0);
+  --text: #131316;
+  --text-2: #5b5b66;
+  --text-3: #9a9aa3;
+  --selection: rgba(184, 130, 31, 0.18);
+  /* Product media: white backdrop in light; in dark a --surface-2 well with a dimmed white plate under each image. */
+  --media-bg: #f3f3f5;
+  --media-ring: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --plate-shadow: none;
+  --plate-filter: none;
+
+  --accent: #b8821f;
+  --accent-hover: #a87618;
+  --accent-ink: #1a1200;
+  --accent-soft: rgba(184, 130, 31, 0.14);
+  --pass: #15803d;
+  --reject: #b91c1c;
+
+  --font-sans: 'Geist Variable', 'Geist', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: 'Geist Mono Variable', 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --leading: 1.45;
+
+  /* Shape: 10 buttons/inputs/chips · 12 thumbnails · 16 cards · 20 viewer/sheets */
+  --r-control: 10px;
+  --r-thumb: 12px;
+  --r-card: 16px;
+  --r-frame: 20px;
+
+  /* Motion: 200–280 ms ease-out */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 200ms;
+  --dur-slow: 280ms;
+
+  --topbar-h: 56px;
+  --gutter: 32px;
+  --content-max: 1440px;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b0b0e;
+  --vignette: radial-gradient(90% 70% at 50% 35%, rgba(255, 255, 255, 0.03), transparent 70%);
+  --surface: #141418;
+  --surface-2: #1b1b21;
+  --surface-3: #222229;
+  --surface-translucent: rgba(20, 20, 24, 0.85);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 14px 40px rgba(0, 0, 0, 0.45);
+  --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --text: #f2f2f4;
+  --text-2: #a1a1aa;
+  --text-3: #6b6b75;
+  --selection: rgba(240, 177, 76, 0.22);
+  --media-bg: #e4e4e8;
+  --media-ring: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --plate-shadow: none;
+  --plate-filter: none;
+  --accent: #f0b14c;
+  --accent-hover: #f5be65;
+  --accent-ink: #1a1200;
+  --accent-soft: rgba(240, 177, 76, 0.14);
+  --pass: #4ade80;
+  --reject: #f87171;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --bg: #0b0b0e;
+    --vignette: radial-gradient(90% 70% at 50% 35%, rgba(255, 255, 255, 0.03), transparent 70%);
+    --surface: #141418;
+    --surface-2: #1b1b21;
+    --surface-3: #222229;
+    --surface-translucent: rgba(20, 20, 24, 0.85);
+    --border: rgba(255, 255, 255, 0.06);
+    --border-strong: rgba(255, 255, 255, 0.12);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    --shadow-lift: 0 14px 40px rgba(0, 0, 0, 0.45);
+    --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    --text: #f2f2f4;
+    --text-2: #a1a1aa;
+    --text-3: #6b6b75;
+    --selection: rgba(240, 177, 76, 0.22);
+  --media-bg: #e4e4e8;
+  --media-ring: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --plate-shadow: none;
+  --plate-filter: none;
+    --accent: #f0b14c;
+    --accent-hover: #f5be65;
+    --accent-ink: #1a1200;
+    --accent-soft: rgba(240, 177, 76, 0.14);
+    --pass: #4ade80;
+    --reject: #f87171;
+  }
+}
+
+/* Aliases for the alternate token names. */
+:root {
+  --panel: var(--surface);
+  --panel-2: var(--surface-2);
+  --panel-3: var(--surface-3);
+  --hairline: var(--border);
+  --hairline-2: var(--border-strong);
+  --primary: var(--accent);
+  --primary-ink: var(--accent-ink);
+  --blocked: color-mix(in srgb, var(--reject) 70%, transparent);
+  --highlight: var(--inner-highlight);
+  --tile-shadow: var(--inner-highlight);
+  --tile-shadow-hover: var(--shadow);
+  --shadow-pop: var(--shadow-lift), 0 0 0 1px var(--border);
+  --radius: var(--r-control);
+  --radius-tile: var(--r-thumb);
+  --radius-frame: var(--r-frame);
+  --radius-pop: var(--r-card);
+  --dur-fast: 160ms;
+  --dur-panel: var(--dur-slow);
+  --dur-value: 400ms;
+}

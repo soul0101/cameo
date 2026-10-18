@@ -1,0 +1,27 @@
+{
+  "displayName": "Cameo: spending ceiling or budget alert",
+  "combiner": "OR",
+  "severity": "WARNING",
+  "conditions": [
+    {
+      "displayName": "Cameo alert log line",
+      "conditionMatchedLog": {
+        "filter": "resource.type=\"cloud_run_revision\" AND resource.labels.service_name=\"cameo-api\" AND jsonPayload.cameo_alert:*",
+        "labelExtractors": {
+          "message": "EXTRACT(jsonPayload.message)",
+          "kind": "EXTRACT(jsonPayload.cameo_alert)"
+        }
+      }
+    }
+  ],
+  "documentation": {
+    "content": "${log.extracted_label.message}\n\nOpen the operator dashboard (/admin on the web app) to see who and to unblock.",
+    "mimeType": "text/markdown",
+    "subject": "Cameo alert: ${log.extracted_label.kind}"
+  },
+  "alertStrategy": {
+    "notificationRateLimit": { "period": "300s" },
+    "autoClose": "1800s"
+  },
+  "enabled": true
+}

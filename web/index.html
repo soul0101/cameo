@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Cameo · Personalized ads, inside the story</title>
+    <meta name="description" content="Cameo places the right product for each audience into finished video. Gemini finds the spots, Nano Banana previews them and Gemini Omni edits the shot." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#F4F4F5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E0E11" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Apply the saved theme before first paint (no flash). Matches src/store/theme.ts.
+      try {
+        // Light unless the visitor chose dark, or 'system' to follow the OS.
+        var saved = JSON.parse(localStorage.getItem('cameo-theme') || '{}');
+        var t = saved.state ? saved.state.mode : 'light';
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

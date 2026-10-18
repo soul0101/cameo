@@ -1,0 +1,8 @@
+# Build context is agents/: the API code, its requirements and the packed samples go into the image.
+*
+!requirements.txt
+!cameo_agents
+!samples
+**/__pycache__
+**/*.pyc
+**/.env
